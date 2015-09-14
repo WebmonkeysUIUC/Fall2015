@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+
+<head> <!-- head contains metadata, the data not displayed -->
+  <title>Learn About HTML</title>
+  <meta charset="UTF-8" />
+
+  <style>
+
+    header {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 5px;
+    }
+
+    nav {
+      line-height:30px;
+      background-color:#eeeeee;
+      height:70px;
+      margin: auto;
+      text-align: center;
+
+    }
+
+    div.navdiv { /*how?*/
+      /*float:left;*/
+      display: inline-block;
+      width: 32%;
+      border: 1px solid black;
+      text-align: center;
+      background-color: #eeeeff;
+      margin-left: auto;
+    }
+
+    footer {
+      background-color:#eeeeee;
+      color:black;
+      clear:both;
+      text-align:center;
+      padding:5px; 
+    }
+
+
+    a.LinksPara:link    {color:#00ff00; background-color:transparent; text-decoration:none}
+    a.LinksPara:visited {color:#ff00ff; background-color:transparent; text-decoration:none}
+    a.LinksPara:hover   {color:#ff0000; background-color:transparent; text-decoration:underline}
+    a.LinksPara:active  {color:#ff0000; background-color:transparent; text-decoration:underline}
+
+
+    table.TablesTable, table.TablesTable th, table.TablesTable td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    table.TablesTable th, table.TablesTable td {
+      padding: 5px;
+      text-align: center;
+    }
+
+    table.TablesTable td {
+      width: 20%; /* Always evenly since the row spans 100%??? */
+    }
+
+    div.ListsList {
+      float: left;
+      margin: 5px;
+      padding: 15px;
+      width: 150px;
+      height: 150px;
+      border: 1px solid black;
+    }
+
+    What {
+      background-color: #ddd;
+      color: red;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+<h1 id="top"><img src="http://pixabay.com/static/uploads/photo/2014/07/08/09/58/html5-386614_640.jpg" height="120" width="140" style="vertical-align: middle;" /> About HTML <br /><span style="font-size:14px;">From HTML4 to HTML5</span></h1>
+<!-- Headings are used to indicate document structure. -->
+<cite>Author: Ziqiao Ding, Summer 2015</cite>
+</header>
+<br />
+
+<nav>
+<div>
+<div class="navdiv">Basics</div> <div class="navdiv">Advanced</div> <div class="navdiv">Layouts&amp;Decos</div></div>
+
+<div><div class="navdiv">Basics</div> <div class="navdiv">Advanced</div> <div class="navdiv">Layouts&amp;Decos</div></div>
+
+
+</nav>
+
+<br />
+<hr />
+<h2>What is HTML and Why Do We Care</h2>
+<hr />
+<br />
+
+<h3>What is HTML?</h3> 
+<p>HTML, standing for HyperText Markup Language, is a type of markup language.</p>
+<p>A markup language is a system for annotating a document in a way that is syntactically distinguishable from the text. ---- From Wikipedia</p>
+<p>In another words, a markup language is essentially a text script with parts that are used to indicate forms, styles or transformation of normal text parts, instead of simply functioning as normal texts.</p>
+<p>If we look at an HTML file, we see that some parts of the script is just normal text but there are also parts such as all the tags that are surrounded by angle brackets.</p>
+
+
+<h3>Is there other type of Markup Languages?</h3>
+<p>Oh, definitely! There are famous others like XML(Extensible Markup Language), XHTML(Extensible HyperText Markup Language), and one very important one that you will or you already have run into, the TeX family (most famous one LaTex).</p>
+
+
+<h3>So why do we care about HTML</h3>
+<p>A simple answer would be: because this is the core language of web development.</p>
+<p>The purpose of a web browser (Chrome, IE, Firefox, Safari) is to read HTML(sometimes XHTML) documents and interpret them into nice(or shaddy) webpages.</p>
+
+
+<hr />
+<h2>Some Basics Now</h2>
+<hr />
+
+<h3>About Title</h3>
+<p title="About Title">
+  If you move the mouse over this paragraph, the title will show as a tooltip.
+</p>
+
+
+<h3>About Paragraphs</h3>
+<p>
+This paragraph
+contains a lot of lines
+in the source code,
+but the browser
+ignores it.
+</p>
+
+<pre>
+  So, the way to actually take spaces and new lines into considerations is to use tag &lt;pre&gt;&lt;/pre&gt; 
+
+  This is called preformatted text.
+
+  Hope you already noticed the difference in fonts(usually " Courier") and our spa ce  s actually works.
+</pre>
+<pre style="font-family:Times">
+  Of course if you are not happy about the preset font-family, just use style to change it. The default for html is "Times".
+</pre>
+
+<h3>About Style</h3>
+<p style="background-color:lightgrey">
+This has different background color.
+</p>
+
+<p style="color:blue">
+This has different text color.
+</p>
+
+<p style="font-size:300%; font-family:Courier; text-align:center">
+Several style choices.
+</p>
+
+<h3>About Text Formatting</h3>
+<p>
+We will just introduce several text formatting we might frequently use.
+<br />
+For example: <b>Bold</b>, <strong>Strong</strong>, <i>Italic</i>, <em>Emphasized</em>, <small>Small</small>, <mark>Marked</mark>, <del>Deleted</del>, <ins>Inserted</ins>, <sub>Subscript</sub>and<sup>Superscript</sup>
+</p>
+
+<h3>About Some Combined Tags</h3>
+<p>
+These tags have their own name but actually they are just the built-in tags combined by different formatting.
+</p>
+<p>
+Examples: <q>Quotations</q>, abbreviation, citation, address and so on...
+</p>
+<p>If you are interested, just look them up.</p>
+<p>One thing might be fairly interesting is &lt;bdo&gt;,bidirectional override, which is used to define the direction of text. <bdo dir="ltr">left to right</bdo> and <bdo dir="rtl">right to left</bdo>. This can be used for websites for languages with different text directions, such as Arabic.
+
+
+<h3>About Inserting Code</h3>
+<p>
+&lt;kbd&gt; for keyboard input, &lt;samp&gt; for output sample, and &lt;code&gt; for code.
+</p>
+<p>
+Use &lt;code&gt; and &lt;pre&gt; to format code.
+<code>
+<pre>
+#include &lt;stdlib.h&gt;
+
+int main(){
+  println("HelloWorld");
+  return 0;
+}
+</pre>
+</code>
+</p>
+
+<h3>About Conditional Comment</h3>
+<p></p>
+
+<h3>About CSS</h3>
+<p>
+There are inline CSS, internal CSS and most frequently used for big project, external CSS. We will discuss later.
+</p>
+<p></p>
+<br />
+
+<hr />
+<h2>Some A Little More Advanced Things</h2>
+<hr />
+<br />
+
+<h3>About Links</h3>
+<p>
+
+  <a href="http://www.google.com" title="correct link">Google</a> <!-- The quotation marks around attribute values are optional, but highly recommended. -->
+  <a href="www.google.com" title="incorrect link">Google not here</a> <!-- If you don't put http:// it will assume its a sub directory/file under current location -->
+  <br />
+  Link with styling:
+  <br />
+  <a class="LinksPara" href="http://www.google.com">Fancy Google</a>
+  <br />
+  Four different ways of openning new windows (Frames...)
+  <br />
+  <a href="http://www.bing.com" target="_blank">New Tab Bing</a>
+  <br />
+  <a href="#top">top</a><!-- Can also link to part of certain id in another page! Very useful! -->
+</p>
+
+
+<h3>About Images</h3>
+<p>First example is our logo in the big header part</p>
+<p title="About Images">
+  This is to demonstrate alternative when element not accessible.
+  <img src="blablabla.jpg" alt="Picture Not Found." /> <!-- the alt attribute provides an alternative text when element not available. Can be read by screen readers, say for blind people. -->
+</p>
+<p>
+<img src="http://assets.audiomack.com/balloon-pants/5017bd09bd6c33b9320e6ba89a2dc19e.png" alt="balloon" style="float:left;width:42px;height:42px;" /> Ok, this is about image floating, just like balloons.
+</p>
+<br />
+<p>
+Image Maps can map different parts of one image to different clickable areas.
+</p>
+
+
+<h3>About Tables and Lists</h3>
+<table style="width:100%" class="TablesTable">
+  <caption>The Table of Table</caption>
+  <tr>
+    <td>This</td>
+    <td>is</td>
+    <td>what</td>
+  </tr>
+  <tr>
+    <td>I</td>
+    <td>am</td>
+    <td>talking</td>
+  </tr>
+  <tr>
+    <th colspan="3">ABOUT!</th>
+  </tr>
+</table>
+<p>These are lists</p>
+
+<div class="ListsList">
+  <ul>
+    <li>I</li>
+    <li>am</li>
+    <li>an</li>
+    <li>unordered</li>
+    <li>list</li>
+  </ul>
+</div>
+
+<div class="ListsList">
+  <ol>
+    <li>I</li>
+    <li>am</li>
+    <li>an</li>
+    <li>ordered</li>
+    <li>list</li>
+  </ol>
+</div>
+
+<div class="ListsList">
+  <dl>
+    <dt>Alice</dt>
+    <dd>I am</dd>
+    <dt>Ben</dt>
+    <dd>a</dd>
+    <dt>Charlie</dt>
+    <dd>description list</dd>
+  </dl>
+</div>
+
+<div style="width:100%; clear:both"></div> <!-- to prevent the float effect of previous three divs ... neccesary??-->
+
+<h3>Colors &amp; Entities</h3>
+
+
+
+
+
+<br />
+<hr />
+<h2>Blocks and Layouts</h2>
+<hr />
+<br />
+
+<h3>About Blocks</h3>
+<p>Blocks, tag &lt;div&gt;, is the core of doing webpage layout.</p>
+<p>A block, literaly, is a block of space you get on the page. You can image it as a box or tray where you can put everything you want in and you can position it anywhere you think fit without affecting its contents or the contents of other blocks.</p>
+<p>One example you've already seen is when we list out three different kinds of lists. Each type of list is put in a block and the outline is shown for you to see what the blocks look like.</p>
+<p>Making use of styling for blocks, as we did for the three, we can align blocks horizontally and <strong>responsive</strong> (If you squeeze the browser horizontally you can see the blocks scooch down under the previous one instead of staying where they are and go out of page scope.)</p>
+<p>Responsive design is vital in today's web design for the various platform with different screen/browser window sizes (e.g. laptop compared to mobile devices).</p>
+<p>Make the width certain percentage of the browser width so that the block stretch/shrink with the browser would be another way to do it.</p>
+
+<div style="width:60%; height:30px; border: 1px solid black; float:left; margin: 5px; text-align:center;">Fat Block</div>
+<div style="width:30%; height:30px; border: 1px solid black; float:left; margin: 5px; text-align:center;">Thin Block</div>
+<div style="width:100%; clear:both;"></div>
+<p>An empty block that spanning the whole width of browser would make a nice separation between web contents sometimes especially when stylings have effects on each other. (Do you know there's an empty block right above me? :P)</p>
+
+<h3>About Span</h3>
+<p>A span is used to define a part of the <span style="color:red;">TEXT</span></p>
+
+<h3>About Iframes</h3>
+<iframe src="learnHTML.html" width="600" height="200" name="IframesIframe" style="margin-left:30px;"></iframe>
+<p style="margin-left:30px;"><a href="responsiveLayout.html" target="IframesIframe">Responsive Example</a> <a href="learnHTML.html" target="IframesIframe">This Page~</a> </p>
+
+<br />
+<hr />
+<h2>Forms and Inputs</h2>
+<hr />
+<br />
+
+<h3>About Forms</h3>
+<p>A form gets user input and is a convenient port for front-end back-end communication(which we will discuss later on).</p>
+<form action="responsiveLayout.html" method="" target="_blank" accept-charset="UTF-8" autocomplete="on">
+<fieldset>
+<legend>Webmonkey Info</legend>
+Username: <input type="text" name="username" placeholder="jeff">
+Password: <input type="password" name="pw" required>
+
+<br />
+Are you a member of Webmonkey?<br>
+<input list="yesno" name="monkey">
+<datalist id="yesno">
+  <option value="Yes I am" />
+  <option value="No I'm not" />
+  <option value="Don't Care" />
+  <option value="Web what?" />
+</datalist>
+<br>
+Select (a) selfie(s):<br />
+<input type="file" name="img" multiple />
+<br />
+From 1 to 10, how much do you love web design?<br />
+<input type="number" name="rate" max="10" min="1" step="1" />
+<br />
+<input type="submit" /> 
+</fieldset>
+</form>
+<p>There are many types of input and attributes of forms. Look them up if you want to use any of them.</p>
+
+<br />
+<hr />
+<h2>HTML5</h2>
+<hr />
+<br />
+
+<h3>About New Stuffs in HTML5</h3>
+<p>(This page has more or less used a bit HTML5 in other sections too)</p>
+<p>HTML5 has more features which make it even more powerful than ever. It also removed several redundant features (not that we ever ran into any of those).</p>
+<p>HTML5 supports eight new block level elements: header, section, footer, aside, nav, main, article and figure.</p>
+<p>What is more, it supports user defined element like in XML (you are more than encouraged to look at XML intro and tutorials).</p>
+<What>This element's name is "What" and its display is defined by styling(CSS)</What>
+
+<h3>About Browser Support</h3>
+
+<h3>About Semantic Elements</h3>
+<p>Elements that tell nothing about their contents are called "non-semantic" elements like &lt;div&gt; while those which do are called "semantic" elements like &lt;form&gt;. HTML5 provides even more semantic elements for different uses that come in handy.</p>
+<p>Take a note though that the biggest benefit new semantic elements like header, footer give is for different webs to have same skeleton and naming scheme so data could be better shared and reused. Also it's easier for search engines to id the correct content.</p>
+
+<h3>About Canvas</h3>
+
+<h3>About SVG</h3>
+
+<h3>Multimedia</h3>
+<p>Video</p>
+<p>Audio</p>
+<object style="margin-left:80px;" width="420" height="315" data="https://www.youtube.com/embed/dVDk7PXNXB8"></object>
+
+
+<div style="width:100%; clear:both;"></div>
+<br />
+<hr />
+<footer>
+<cite>Many Credits to <a href="http://www.w3schools.com" target="_blank">w3schools</a></cite>
+</footer>
+
+</body>
+
+
+</html>
