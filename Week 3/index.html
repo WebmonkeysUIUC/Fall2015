@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Case</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style>
+    img {
+      float: left;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+
+      <a class="navbar-brand" href="#">Website Name</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+
+  <div class="panel panel-danger">
+    <div class="panel-body">A Basic Panel</div>
+  </div>
+
+  <div class="jumbotron">
+    <h1>Webmonkeys Bootstrap!</h1>      
+    <p>Words, Words, Words!</p>      
+    <a href="#" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-star"></span> Button</a>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+      <p>This is a paragraph!</p>
+    </div>
+
+    <div class="col-md-3"> 
+      <p>Another Paragraph</p>
+    </div>
+
+    <div class="col-md-3"> 
+      <p>Randomness. kldsjf;oiahwefjnv;asd;lha</p>
+    </div>
+
+    <div class="col-md-3">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Submenu 1</a></li>
+            <li><a href="#">Submenu 2</a></li>
+            <li><a href="#">Submenu 3</a></li>                        
+          </ul>
+        </li>
+        <li><a href="#">Menu 2</a></li>
+        <li><a href="#">Menu 3</a></li>
+      </ul>
+    </div>
+
+    <div class="clearfix visible-lg"></div>
+    
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="success">
+        <td>Steve</td>
+        <td>Jobs</td>
+        <td>steve@example.com</td>
+      </tr>
+      <tr class="danger">
+        <td>Bill</td>
+        <td>Gates</td>
+        <td>Bill@example.com</td>
+      </tr>
+      <tr class="info">
+        <td>Mark</td>
+        <td>Zuckerberg</td>
+        <td>Mark@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>
