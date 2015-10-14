@@ -1,0 +1,18 @@
+header {
+	text-align: center;
+
+}
+
+ul {
+	text-align: center;
+}
+
+li {
+	display: inline;
+}
+
+.photo {
+	margin: auto;
+	width: 300px;
+	height: 300px;
+}
