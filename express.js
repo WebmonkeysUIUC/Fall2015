@@ -72,6 +72,10 @@ app.use('/static', express.static(__dirname + '/public'));
   // 1. $ (sudo)npm install ejs
   //    app.set('view engine', 'ejs');  in app.js
   // 2. $ express appname -ejs
+//usual structure of these files:
+  // make a layout / heading .jade that is similar in all other pages
+  // index.jade, where the main content is
+  // footer.jade the footer
 
 //final notes:
   // The installation might be the hardest part, make sure your syntax correspond to the right version.
